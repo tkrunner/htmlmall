@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://www.w3bai.com/lib/w3.css">
+<link rel="stylesheet" href="https://www.w3bai.com/lib/w3codecolor.js">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3schools30.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/codemirror.css"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Prompt:wght@100&display=swap" rel="stylesheet">
+<title>คู่มือ</title>
+</head>
+
+<style>
+.city {display:none;}
+body{font-family: 'Kanit', sans-serif !important; font-weight: 800!important;}
+h2{font-family: 'Kanit', sans-serif !important; font-weight: 800!important;}
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom2 {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom2:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
+
+<script src="https://www.w3schools.com/lib/uic.js?v=1.0.5"></script>
+<script data-cfasync="false" type="text/javascript">
+var k42 = false;
+
+k42 = true;
+
+</script>
+<script data-cfasync="false" type="text/javascript">
+    window.snigelPubConf = {
+    "adengine": {
+
+      "activeAdUnits": ["try_it_leaderboard"]
+
+  }
+}
+uic_r_a()
+</script>
+<script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/w3schools.com/loader.js" type="text/javascript"></script>
+<script>
+if (window.addEventListener) {              
+    window.addEventListener("resize", browserResize);
+} else if (window.attachEvent) {                 
+    window.attachEvent("onresize", browserResize);
+}
+var xbeforeResize = window.innerWidth;
+
+function browserResize() {
+    var afterResize = window.innerWidth;
+    if ((xbeforeResize < (970) && afterResize >= (970)) || (xbeforeResize >= (970) && afterResize < (970)) ||
+        (xbeforeResize < (728) && afterResize >= (728)) || (xbeforeResize >= (728) && afterResize < (728)) ||
+        (xbeforeResize < (468) && afterResize >= (468)) ||(xbeforeResize >= (468) && afterResize < (468))) {
+        xbeforeResize = afterResize;
+        
+        if (document.getElementById("adngin-try_it_leaderboard-0")) {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["try_it_leaderboard"]); });
+              }
+         
+    }
+    if (window.screen.availWidth <= 768) {
+      restack(window.innerHeight > window.innerWidth);
+    }
+    fixDragBtn();
+    showFrameSize();    
+}
+var fileID = "";
+</script>
+
+<body>
+
+<nav class="w3-sidenav w3-light-grey w3-card-2" style="width:220px">
+  <div class="w3-container">
+    <h5>Menu</h5>
+  </div>
+  <a href="#" class="tablink" onclick="openCity(event, 'Login')">- เข้าสู่ระบบ Mall.Ufa147</a>
+  <a href="#" class="tablink" onclick="openCity(event, 'Reward')">- จัดการรางวัล</a>
+  <a href="#" class="tablink" onclick="openCity(event, 'User')">- จัดการสมาชิก</a>
+  <a href="#" class="tablink" onclick="openCity(event, 'Product')">- จัดการสินค้า</a>
+  <a href="#" class="tablink" onclick="openCity(event, 'Employee')">- จัดการพนักงาน</a>
+  <a href="#" class="tablink" onclick="openCity(event, 'Report')">- รายงาน</a>
+
+
+
+</nav>
+
+<div style="margin-left:220px;">
+
+  <div id="Login" class="w3-container city" style="margin: 0px 200px 0px 200px ;">
+    <h2>วิธีเข้าสู่ระบบ UfaMall</h2>
+    <p> เข้าสู่เว็บไซต์หลังบ้านของ UFAMALL และกรอก Username และ Password</p>
+    
+    <div > 
+      <img class="zoom" src="/img/login.jpg" alt="" width="100%">
+    </div>
+    <br><hr> 
+    <h2>หลังจากกรอกรหัสผ่านเรียบร้อยแล้ว จะได้หน้ารวมสถิติ</h2>
+    <p>  หน้าสถิติจะแสดงยอดเงินฝาก จำนวนสมาชิก และสถิติเครดิต และปรากฎเมนูซึ่งได้แก่</p>
+    <ol>
+      <li>จัดการรางวัล ได้แก่ รางวัล, สินค้ารอการจัดส่ง</li>
+      <li>จัดการสมาชิก ได้แก่ สมาชิก, แจ้งฝากเงิน, กระเป๋าตัง</li>
+      <li>จัดการสินค้า ได้แก่ หมวดหมู่สินค้า, สินค้า, จำนวนสินค้า, สินค้าแนะนำ, สินค้าที่จัดส่งแล้ว</li>
+      <li>จัดการพนักงาน ได้แก่ พนักงาน</li>
+      <li>จัดการโปรโมชั่น ได้แก่ โปรโมชั่น</li>
+      <li>รายงาน ได้แก่ รายงานประจำวัน, รายงานสมาชิก, รายงานจัดส่งสินค้า, รายงานรางวัลทีไ่ด้รับ, รางวัลที่ยกเลิก</li>
+
+    </ol>
+
+    <div > 
+      <img class="zoom" src="/img/สถิติ.jpg" alt="" width="100%">
+    </div> 
+    <br><hr>
+  </div>
+  <div id="Reward" class="w3-container city" style="margin: 0px 200px 0px 200px ;">
+    <h2>หน้ารางวัล</h2>
+    <p> สามารถยืนยันและลบรางวัลที่ผู้ใช้ได้รับได้ ซึ่งจะมีปุ่มทั้งหมด 2 ปุ่มคือ</p>
+    <ol>
+      <li>ยืนยันรางวัล (เมื่อกดแล้วระบบจะมอบรางวัลให้ผู้ใช้)</li>
+      <li>ยกเลิกรางวัล (เมื่อกี้แล้วระบบจะยกเลิกรางวัลของผู้ใช้)</li>
+    </ol>
+    <div > 
+      <img class="zoom" src="/img/รางวัล.jpg" alt="" width="100%">
+    </div> 
+    <br><hr> 
+    <h2>หน้าสินค้ารอจัดส่ง</h2>
+    <p> สามารถดูรายละเอียดและที่อยู่การจัดส่งได้จากปุ่มแว่นขยาย <img src="/img/ปุ่มค้นหา.jpg" alt="" width="3%" style="margin:0px;"></p>
+    
+    <div > 
+      <img class="zoom" src="/img/สินค้ารอจัดส่ง.jpg" alt="" width="100%">
+    </div>
+    <div style="float: left; width:100%; padding:15px;" >
+      <h2>ปุ่มแว่นขยาย <img src="/img/ปุ่มค้นหา.jpg" alt="" width="3%" style="margin:0px;"></h2>
+      <p> เมื่อกดปุ่มถัดไปจะแสดงสินค้าซื้อสั่งซื้อ</p>
+      <img class="zoom" src="/img/จัดการคำสั่งซื้อ.jpg" alt="" width="100%">
+    </div>
+    <div style="float: left; width:100%; padding:15px;" >
+      <h2>ปุ่มถัดไป <img src="/img/ปุ่มถัดไป.jpg" alt="" width="5%" style="margin:0px;"></h2>
+      <p> เมื่อกดปุ่มถัดไปจะเป็นการตรวจสอบประเภทการจัดส่ง เลขพัสดุ และยืนยันการจัดส่ง</p>
+      <img class="zoom" src="/img/จัดการคำสั่งซื้อสินค้า.jpg" alt="" width="100%">
+    </div>
+    <div style="float: left; width:100%; padding:15px; margin-bottom: 100px;" >
+      <h2>ข้อมูลการจัดส่ง</h2>
+      <p> เมื่อกดปุ่มยืนยันการจัดส่ง ระบบจะลบรายการออกจากเมนูสินค้ารอการจัดส่ง</p>
+      <img class="zoom" src="/img/ข้อมูลการจัดส่ง.jpg" alt="" width="100%">
+    </div>
+  </div>
+
+  <div id="User" class="w3-container city" style="margin: 0px 200px 0px 200px ;">
+    <h2>หน้าสมาชิก</h2>
+    <p>สามารถเพิ่มลูกค้า ดูข้อมูลลูกค้า แก้ไขข้อมูลลูกค้า และลบข้อมูลลูกค้าได้ จากปุ่มดังนี้</p>
+    <ol>
+      <li>ปุ่มเพิ่มผู้ใช้งาน  <img src="/img/ปุ่มเพิ่มผู้ใช้งาน.jpg" alt="" width="4%" style="margin:1px;"></li>
+      <li>ปุ่มดูข้อมูลลูกค้า <img src="/img/ปุ่มค้นหา.jpg" alt="" width="2%" style="margin:1px;"></li>
+      <li>ปุ่มแก้ไขลูกค้า <img src="/img/ปุ่มแก้ไข.jpg" alt="" width="2%" style="margin:1px;"></li>
+      <li>ปุ่มลบข้อมูลลูกค้า <img src="/img/ปุ่มลบ.jpg" alt="" width="2%" style="margin:1px;"></li>
+    </ol>
+    
+    <div > 
+      <img class="zoom" src="/img/สมาชิก.jpg" alt="" width="100%">
+    </div>
+    <div class="row" style="margin:0px 0px 40% 0px;">
+      <div style="float: left; width:25%; padding:15px;">
+        <h2>ปุ่มเพิ่มผู้ใช้งาน <img src="/img/ปุ่มเพิ่มผู้ใช้งาน.jpg" alt="" width="20%" style="margin:0px;"></h2>
+        <p>เมื่อกดปุ่มยืนยัน จะเป็นการเพิ่มผู้ใช้งานใหม่</p>
+        <img class="zoom" src="/img/เพิ่มผู้ใช้งาน.jpg" alt="" width="100%">
+      </div>
+      
+      <div style="float: left; width:25%; padding:15px;">
+        <h2>ปุ่มดูข้อมูลลูกค้า <img src="/img/ปุ่มค้นหา.jpg" alt="" width="10%" style="margin:0px;"></h2>
+        <p>แสดงรายละเอียดผู้ใช้ที่เลือก</p>
+        <img class="zoom" src="/img/ข้อมูลลูกค้า.jpg" alt="" width="100%">
+      </div>
+      
+      <div style="float: left; width:25%; padding:15px;">
+        <h2>ปุ่มแก้ไขข้อมูลลูกค้า <img src="/img/ปุ่มแก้ไข.jpg" alt="" width="10%" style="margin:0px;"></h2>
+        <p>เมื่อกดปุ่มยืนยัน จะเป็นการแก้ไขข้อมูลผู้ใช้ที่เลือก</p>
+        <img class="zoom" src="/img/แก้ไขข้อมูลลูกค้า.jpg" alt="" width="100%">
+      </div>
+      <div style="float: left; width:25%; padding:15px;">
+        <h2>ปุ่มลบข้อมูลลูกค้า <img src="/img/ปุ่มลบ.jpg" alt="" width="10%" style="margin:0px;"></h2>
+        <p>เมื่อกดปุ่มยืนยัน จะเป็นการลบผู้ใช้</p>
+        <img class="zoom" src="/img/ลบข้อมูลลูกค้า.jpg" alt="" width="100%" style="margin:0px 0px 200px 0px;">
+      </div>
+
+    </div> 
+    <br><hr>
+    <h2>หน้าแจ้งฝากเงิน</h2>
+    <p> สามารถฝากเงิน และดูประวัติฝากเงินได้ ซึ่งปรากฎปุ่มดังนี้</p>
+    <ol>
+      <li>ปุ่มฝากเงิน  <img src="/img/ปุ่มฝากเงิน.jpg" alt="" width="4%" style="margin:1px;"></li>
+      <li>ปุ่มประวัติ <img src="/img/ปุ่มประวัติ.jpg" alt="" width="4%" style="margin:1px;"></li>
+    </ol>
+    <div > 
+      <img class="zoom" src="/img/แจ้งฝากเงิน.jpg" alt="" width="100%">
+    </div>
+    <div class="row" style="margin:0px 0px 40% 0px;">
+      <div style="float: left; width:25%; padding:15px;">
+        <h2>ปุ่มฝากเงิน <img src="/img/ปุ่มฝากเงิน.jpg" alt="" width="20%" style="margin:0px;"></h2>
+        <p> แสดงช่องใส่จำนวนเงินและหมายเหตุ เมื่อกดยืนยันจะเพิ่มเงินไปยังผู้ใช้ที่เลือก</p>
+        <img class="zoom" src="/img/ฝากเงิน.jpg" alt="" width="100%">
+      </div>
+      
+      <div style="float: left; width:75%; padding:15px;">
+        <h2>ปุ่มประวัติฝากเงิน <img src="/img/ปุ่มประวัติ.jpg" alt="" width="7%" style="margin:0px;"></h2>
+        <p> แสดงประวัติการฝากเงินของผู้ใช้ที่เลือก</p>
+        <img class="zoom" src="/img/ประวัติฝากเงิน.jpg" alt="" width="100%">
+      </div>
+    </div>
+    <br><hr>
+    <h2>หน้ากระเป๋าตัง</h2>
+    <p> แสดงจำนวนเงินของผู้ใช้งานทั้งหมด สิ่งที่แสดงได้แก่</p>
+    <ol>
+      <li>จำนวน COIN</li>
+      <li>จำนวนตั๋วทอง</li>
+      <li>จำนวนตั๋วเงิน</li>
+      <li>จำนวนตั๋วทองแดง</li>
+    </ol>
+    <p> ซึ่งในแต่ละอัน สามารถดูที่มาของจำนวนเงินนั้นได้ เมื่อกดที่จำนวนเงินนั้น</p>
+    <div > 
+      <img class="zoom" src="/img/กระเป๋าตัง.jpg" alt="" width="100%">
+    </div>
+    <div style="float: left; width:100%; margin-bottom: 50px;">
+      <br>
+      <h2>เมื่อกดที่จำนวนเงิน</h2>
+      <p> แสดงที่มาของเงินที่เลือก</p>
+      <img class="zoom" src="/img/ที่มาของเงิน.jpg" alt="" width="100%">
+    </div>
+  </div>
+
+
+  <div id="Product" class="w3-container city" style="margin: 0px 200px 0px 200px ;">
+    <h2>หน้าหมวดหมู่สินค้า</h2>
+    <p> สามารถเพิ่ม ลบ แก้ไขหมวดหมู่ได้ จากปุ่มดังนี้</p>
+    <ol>
+      <li>ปุ่มเพิ่มหมวดหมู่สินค้า <img src="/img/ปุ่มเพิ่มหมวดหมู่สินค้า.jpg" alt="" width="5%" style="margin:1px;"></li>
+      <li>ปุ่มแก้ไขหมวดหมู่สินค้า <img src="/img/ปุ่มแก้ไข.jpg" alt="" width="2%" style="margin:1px;"></li>
+      <li>ปุ่มลบหมวดหมู่สินค้า <img src="/img/ปุ่มลบ.jpg" alt="" width="2%" style="margin:1px;"></li>
+    </ol>
+    
+    <div > 
+      <img class="zoom" src="/img/หมวดหมู่สินค้า.jpg" alt="" width="100%">
+    </div>
+    <div class="row" style="margin:0px 0px 32% 0px;">
+      <div style="float: left; width:33%; padding:15px;">
+        <h2>ปุ่มเพิ่มหมวดหมู่สินค้า <img src="/img/ปุ่มเพิ่มหมวดหมู่สินค้า.jpg" alt="" width="20%" style="margin:0px;"></h2>
+        <p> เมื่อกดยืนยันจะเป็นการเพิ่มหมวดหมู่ใหม่ในรายการหมวดหมู่</p>
+        <img class="zoom" src="/img/หน้าเพิ่มหมวดหมู่สินค้า.jpg" alt="" width="100%">
+      </div>
+      
+      <div style="float: left; width:33%; padding:15px;">
+        <h2>ปุ่มแก้ไขหมวดหมู่สินค้า <img src="/img/ปุ่มแก้ไข.jpg" alt="" width="8%" style="margin:0px;"></h2>
+        <p> เมื่อกดปุ่มยืนยันจะเป็นการแก้ไขชื่อหมวดหมู่สินค้าที่เลือก</p>
+        <img class="zoom" src="/img/หน้าแก้ไขหมวดหมู่สินค้า.jpg" alt="" width="100%">
+      </div>
+      
+      <div style="float: left; width:34%; padding:15px;">
+        <h2>ปุ่มลบหมวดหมู่สินค้า <img src="/img/ปุ่มลบ.jpg" alt="" width="8%" style="margin:0px;"></h2>
+        <p> เมื่อกดปุ่มยืนยันจะลบหมวดหมู่สินค้าที่เลือกออกจากรายการหมวดหมู่</p>
+        <img class="zoom" src="/img/หน้าลบหมวดหมู่สินค้า.jpg" alt="" width="100%" style="margin:0px 0px 100px 0px;">
+      </div>
+    </div> 
+    <hr>
+    <h2>หน้าสินค้า</h2>
+    <p>สามารถดูรายการสินค้า เพิ่มสินค้าใหม่ ลบสินค้าออก และแก้ไขสินค้า ได้จากปุ่มดังนี้</p>
+    <ol>
+      <li>ปุ่มเพิ่มสินค้า <img src="/img/ปุ่มเพิ่มสินค้า.jpg" alt="" width="4%" style="margin:1px;"></li>
+      <li>ปุ่มแก้ไขสินค้า <img src="/img/ปุ่มแก้ไข.jpg" alt="" width="2%" style="margin:1px;"></li>
+      <li>ปุ่มลบสินค้า <img src="/img/ปุ่มลบ.jpg" alt="" width="2%" style="margin:1px;"></li>
+    </ol>
+    <div > 
+      <img class="zoom" src="/img/สินค้า.jpg" alt="" width="100%">
+    </div>
+    <div class="row" style="margin:0px 0px 50% 0px;">
+      <div style="float: left; width:40%; padding:15px;">
+        <h2>ปุ่มเพิ่มสินค้า <img src="/img/ปุ่มเพิ่มสินค้า.jpg" alt="" width="20%" style="margin:0px;"></h2>
+        <p>กรอกรายละเอียดสินค้าตามรูป และกดยืนยันจะเป็นการเพิ่มสินค้าใหม่ในรายการสินค้า</p>
+        <img class="zoom2" src="/img/หน้าเพิ่มสินค้า.jpg" alt="" width="100%">
+      </div>
+      
+      <div style="float: left; width:37%; padding:15px;">
+        <h2>ปุ่มแก้ไขสินค้า <img src="/img/ปุ่มแก้ไข.jpg" alt="" width="10%" style="margin:0px;"></h2>
+        <p>แก้ไขรายละเอียดสินค้าตามรูป เมื่อกดยืนยันจะเป็นการยืนยันการแก้ไข และสามารถเปลี่ยนสถานะสินค้าเพื่อตั้งขายบนเว็บไซต์ได้</p>
+        <img class="zoom2" src="/img/หน้าแก้ไขรายละเอียดสินค้า.jpg" alt="" width="100%">
+      </div>
+      
+      <div style="float: left; width:20%; padding:15px;">
+        <h2>ปุ่มลบสินค้า <img src="/img/ปุ่มลบ.jpg" alt="" width="20%" style="margin:0px;"></h2>
+        <p>เมื่อกดยืนยันจะเป็นการลบสินค้าออกจากรายการสินค้า</p>
+        <img class="zoom" src="/img/หน้าลบสินค้า.jpg" alt="" width="100%" style="margin:0px 0px 350px 0px;">
+      </div>
+    </div>
+<hr>
+    <h2>หน้าจำนวนสินค้า</h2>
+    <p>สามารถเพิ่มจำนวนสินค้าในสต็อกได้ ซึ่งจะปรากฎปุ่มดังนี้</p>
+    <ol>
+      <li>ปุ่มเพิ่มจำนวนสินค้า <img src="/img/ปุ่มบวก.jpg" alt="" width="2%" style="margin:0px;"></li>
+      <li>ปุ่มลบจำนวนสินค้า <img src="/img/ปุ่มเครื่องหมายลบ.jpg" alt="" width="2%" style="margin:0px;"></li>
+      <li>ปุ่มสินค้าแนะนำ <img src="/img/ปุ่มสินค้าแนะนำ.jpg" alt="" width="2%" style="margin:0px;"></li>
+    </ol>
+    
+    <div > 
+      <img class="zoom" src="/img/จำนวนสินค้า.jpg" alt="" width="100%">
+    </div>
+    <div class="row" style="margin:0px 0px 40% 0px;">
+      <div style="float: left; width:33%; padding:15px;">
+        <h2>ปุ่มเพิ่มจำนวนสินค้า <img src="/img/ปุ่มบวก.jpg" alt="" width="10%" style="margin:0px;"></h2>
+        <p>กรอกจำนวนเพื่อเพิ่มสินค้าในสต็อก</p>
+        <img class="zoom" src="/img/เพิ่มจำนวนสินค้า.jpg" alt="" width="100%">
+      </div>
+      
+      <div style="float: left; width:33%; padding:15px;">
+        <h2>ปุ่มลบจำนวนสินค้า <img src="/img/ปุ่มเครื่องหมายลบ.jpg" alt="" width="10%" style="margin:0px;"></h2>
+        <p>กรอกจำนวนเพื่อลดสินค้าในสต็อก</p>
+        <img class="zoom" src="/img/ลบจำนวนสินค้า.jpg" alt="" width="100%">
+      </div>
+      
+      <div style="float: left; width:33%; padding:15px;">
+        <h2>ปุ่มสินค้าแนะนำ <img src="/img/ปุ่มสินค้าแนะนำ.jpg" alt="" width="10%" style="margin:0px;"></h2>
+        <p>เมื่อกดยืนยันจะเป็นการเพิ่มสินค้าลงไปในรายการแนะนำสินค้า เพื่อแนะนำสินค้านั้นภายในเว็บไซต์</p>
+        <img class="zoom" src="/img/หน้าสินค้าแนะนำ.jpg" alt="" width="100%" style="margin:0px 0px 100px 0px;">
+      </div>
+    </div>
+<hr>
+    <h2>หน้าสินค้าแนะนำ</h2>
+    <p>สามารถดูสินค้าในรายการแนะนำ และลบสินค้าในรายการแนะนำได้ นอกจากนี้ยังสามารถเพิ่มสินค้าใหม่ได้จากหน้ารายการแนะนำ</p>
+    
+    <div > 
+      <img class="zoom" src="/img/สินค้าแนะนำ.jpg" alt="" width="100%">
+    </div>
+    <div class="row" style="margin:0px 0px 40% 0px;">
+      <div style="float: left; width:70%; padding:15px;">
+        <h2>ปุ่มเพิ่มสินค้า <img src="/img/ปุ่มเพิ่มสินค้า.jpg" alt="" width="8%" style="margin:0px;"></h2>
+        <img class="zoom" src="/img/หน้าเพิ่มสินค้า.jpg" alt="" width="100%">
+      </div>
+      
+      <div style="float: left; width:30%; padding:15px;">
+        <h2>ปุ่มลบ <img src="/img/ปุ่มลบ.jpg" alt="" width="10%" style="margin:0px;"></h2>
+        <img class="zoom" src="/img/หน้าลบสินค้าแนะนำ.jpg" alt="" width="100%" style="margin:0px 0px 220px 0px;">
+      </div>
+      
+
+    </div>
+<hr>
+    <h2>หน้าสินค้าที่จัดส่งแล้ว</h2>
+    <p> แสดงสินค้าที่จัดส่งไปแล้ว ซึ่งจะแสดงสถานะการจัดส่งและสามารถดูรายละเอียดการจัดส่งของสินค้านั้นได้จากปุ่มแว่นขยาย <img src="/img/ปุ่มค้นหา.jpg" alt="" width="3%" style="margin:0px;"></p>
+    
+    <div > 
+      <img class="zoom" src="/img/สินค้าที่จัดส่งแล้ว.jpg" alt="" width="100%">
+    </div>
+    <div style="float: left; width:100%; padding:15px;" >
+      <h2>ปุ่มแว่นขยาย <img src="/img/ปุ่มค้นหา.jpg" alt="" width="3%" style="margin:0px;"></h2>
+      <p>แสดงข้อมูลการจัดส่ง เมื่อกดปุ่มถัดไปจะแสดงสินค้าที่จัดส่ง</p>
+      <img class="zoom" src="/img/จัดการคำสั่งซื้อ.jpg" alt="" width="100%">
+    </div>
+    <div style="float: left; width:100%; padding:15px;" >
+      <h2>สินค้าที่จัดส่ง </h2>
+      <p> เมื่อกดปุ่มถัดไป <img src="/img/ปุ่มถัดไป.jpg" alt="" width="5%" style="margin:0px;"> จะเป็นการตรวจสอบประเภทการจัดส่ง และเลขพัสดุ</p>
+      <img class="zoom" src="/img/จัดการคำสั่งซื้อสินค้า.jpg" alt="" width="100%">
+    </div>
+    <div style="float: left; width:100%; padding:15px; margin-bottom: 100px;" >
+      <h2>ข้อมูลการจัดส่ง</h2>
+      <p> ดูประเภทการจัดส่งและเลขพัสดุจากหน้านี้</p>
+      <img class="zoom" src="/img/ข้อมูลการจัดส่งสินค้า.jpg" alt="" width="100%">
+    </div>
+
+
+  </div>
+
+
+  <div id="Employee" class="w3-container city" style="margin: 0px 200px 0px 200px ;">
+    <h2>พนักงาน</h2>
+    <p> สามารถเพิ่ม แก้ไข และลบพนักงานได้ จากปุ่มดังนี้</p>
+    <ol>
+      <li>ปุ่มเพิ่มพนักงาน <img src="/img/ปุ่มเพิ่มพนักงาน.jpg" alt="" width="5%" style="margin:1px;"></li>
+      <li>ปุ่มแก้ไขพนักงาน <img src="/img/ปุ่มแก้ไข.jpg" alt="" width="2%" style="margin:1px;"></li>
+      <li>ปุ่มลบพนักงาน <img src="/img/ปุ่มลบ.jpg" alt="" width="2%" style="margin:1px;"></li>
+    </ol>
+    
+    <div > 
+      <img class="zoom" src="/img/พนักงาน.jpg" alt="" width="100%">
+    </div> 
+    <div class="row">
+      <div style="float: left; width:33%; padding:15px;">
+        <h2>ปุ่มเพิ่มพนักงาน <img src="/img/ปุ่มเพิ่มพนักงาน.jpg" alt="" width="20%" style="margin:0px;"></h2>
+        <p>กรอกชื่อผู้ใช้ รหัสผ่าน และกดยืนยันเพื่อเพิ่มพนักงานใหม่</p>
+        <img class="zoom" src="/img/หน้าเพิ่มพนักงาน.jpg" alt="" width="100%">
+      </div>
+      
+      <div style="float: left; width:33%; padding:15px;">
+        <h2>ปุ่มแก้ไขพนักงาน <img src="/img/ปุ่มแก้ไข.jpg" alt="" width="10%" style="margin:0px;"></h2>
+        <p>กรอกข้อมูลพนักงานทับข้อมูลเดิมเพื่อแก้ไขข้อมูลพนักงานที่เลือก</p>
+        <img class="zoom" src="/img/หน้าแก้ไขพนักงาน.jpg" alt="" width="100%">
+      </div>
+      
+      <div style="float: left; width:33%; padding:15px;">
+        <h2>ปุ่มลบพนักงาน <img src="/img/ปุ่มลบ.jpg" alt="" width="10%" style="margin:0px;"></h2>
+        <p>เมื่อกดยืนยันจะเป็นการลบพนักงานออกจากรายการพนักงาน</p>
+        <img class="zoom" src="/img/หน้าลบพนักงาน.jpg" alt="" width="100%" style="margin:0px 0px 100px 0px;">
+      </div>
+    </div>
+  </div>
+
+  <div id="Report" class="w3-container city" style="margin: 0px 200px 0px 200px ;">
+    <h2>รายงานประจำวัน</h2>
+    <p>  แสดงความเคลื่อนไหวของสมาชิก</p>
+    
+    <div > 
+      <img class="zoom" src="/img/รายงานประจำวัน.jpg" alt="" width="100%">
+    </div> 
+    <br><hr>
+    <h2>รายงานสมาชิก</h2>
+    <p>แสดงสรุปจำนวนเงินที่ฝากของสมาชิกแต่ละคนได้ ซึ่งได้แก่</p>
+    <ol>
+      <li>จำนวนครั้งที่ฝาก</li>
+      <li>จำนวนเงินที่ฝาก</li>
+      <li>จำนวนเครดิต</li>
+      <li>จำนวน COIN</li>
+      <li>เกมไพ่</li>
+      <li>เกมกงล้อ</li>
+    </ol>
+    <p>สามารถกดดูประวัติการฝากจากการกดตัวเลขจำนวนครั้งที่ฝาก และดูที่มาของจำนวนเครดิต กับจำนวน COIN ได้</p>
+    <div > 
+      <img class="zoom" src="/img/รายงานสมาชิก.jpg" alt="" width="100%">
+    </div> 
+    <div style="width:100%; margin-bottom: 50px;">
+      <br>
+      <h2>เมื่อกดที่ตัวเลข</h2>
+      <p> แสดงที่มาของจำนวนเงินที่เลือก หรือประวัติการฝาก</p>
+      <img class="zoom" src="/img/ประวัติการฝาก.jpg" alt="" width="100%">
+    </div>
+    <br><hr>
+    <h2>รายงานจัดส่งสินค้า</h2>
+    <p>  สามารถดูรายละเอียดการจัดส่งสินค้าได้</p>
+    
+    <div > 
+      <img class="zoom" src="/img/รายงานจัดส่งสินค้า.jpg" alt="" width="100%">
+    </div>
+    <div style="width:100%; padding:15px;" >
+      <h2>ปุ่มแว่นขยาย <img src="/img/ปุ่มค้นหา.jpg" alt="" width="3%" style="margin:0px;"></h2>
+      <p>แสดงข้อมูลการจัดส่ง เมื่อกดปุ่มถัดไปจะแสดงสินค้าที่จัดส่งแล้ว</p>
+      <img class="zoom" src="/img/จัดการคำสั่งซื้อ.jpg" alt="" width="100%">
+    </div>
+    <div style="width:100%; padding:15px;" >
+      <h2>สินค้าที่จัดส่ง </h2>
+      <p> เมื่อกดปุ่มถัดไป <img src="/img/ปุ่มถัดไป.jpg" alt="" width="5%" style="margin:0px;"> จะเป็นการดูประเภทการจัดส่ง และเลขพัสดุ</p>
+      <img class="zoom" src="/img/จัดการคำสั่งซื้อสินค้า.jpg" alt="" width="100%">
+    </div>
+    <div style="width:100%; padding:15px; margin-bottom: 20px;" >
+      <h2>ข้อมูลการจัดส่ง</h2>
+      <p> ดูประเภทการจัดส่งและเลขพัสดุจากหน้านี้</p>
+      <img class="zoom" src="/img/รายงานการจัดส่งสินค้า.jpg" alt="" width="100%">
+    </div>
+    <br><hr>
+    <h2>รายงานรางวัลที่ได้รับ</h2>
+    <p>  สามารถดูรางวัลที่ผู้ใช้ได้รับได้</p>
+    
+    <div > 
+      <img class="zoom" src="/img/รายงานรางวัลที่ได้รับ.jpg" alt="" width="100%">
+    </div>
+    <br><hr>
+    <h2>รายงานรางวัลที่ยกเลิก</h2>
+    <p>  สามารถดูรางวัลที่ถูกยกเลิกได้</p>
+    
+    <div > 
+      <img class="zoom" src="/img/รายงานรางวัลที่ยกเลิก.jpg" alt="" width="100%">
+    </div>
+    <br><hr>
+  </div>
+
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+<script src="https://www.w3schools.com/lib/spaceit.js?v=1.0.1"></script>
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/lib/spaceit.css" />
+</body>
+</html> 
